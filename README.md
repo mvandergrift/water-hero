@@ -1,4 +1,4 @@
-# Water Hero Ingest
+# Water Hero Analytics
 
 A CLI tool to fetch water usage readings from the WaterHero API and store them in QuestDB.
 
