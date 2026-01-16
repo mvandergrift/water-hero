@@ -55,6 +55,19 @@ go build -o waterhero-ingest ./cmd
 | `-end` | now | End date for backfill (YYYY-MM-DD) |
 | `-chunk` | 24 | Chunk size in hours for API requests |
 
+## Local Development Environment
+
+The `e2e/` directory contains a Docker Compose environment with QuestDB and Grafana preconfigured for local development and testing.
+
+```bash
+cd e2e
+docker compose up -d
+```
+
+This starts:
+- **QuestDB** - Time-series database (ILP: localhost:9009, Web Console: http://localhost:9000)
+- **Grafana** - Dashboards for visualizing water usage (http://localhost:3000)
+
 ## Data Schema
 
 Readings are stored in the `water_readings` table with the following fields:
