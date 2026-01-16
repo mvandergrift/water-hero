@@ -68,6 +68,11 @@ This starts:
 - **QuestDB** - Time-series database (ILP: localhost:9009, Web Console: http://localhost:9000)
 - **Grafana** - Dashboards for visualizing water usage (http://localhost:3000)
 
+Import `sample-dashboard.json` for a pre-configured historical water usage visualization. The custom query is a simple example of how to calculate water usage between two points using QuestDB samples.
+
+<img width="1794" height="815" alt="image" src="https://github.com/user-attachments/assets/2e67bc6d-501a-453e-bac1-07d6db2b6e24" />
+
+
 ## Data Schema
 
 Readings are stored in the `water_readings` table with the following fields:
